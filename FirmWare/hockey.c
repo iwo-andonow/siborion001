@@ -146,9 +146,9 @@ for (;;)
 					SCHET1++;
 					Sound_Dis=0;
 					ChLcd=1;
-					Read_All_Flash(1001);
+					Read_All_Flash(101);
 					SOUND_DEL=0;
-					SOUND_SIZE=(31000);
+					SOUND_SIZE=(13000);
 					Sound=1;
 					}
 				}
@@ -175,9 +175,9 @@ for (;;)
 					SCHET2++;
 					Sound_Dis=0;
 					ChLcd=1;
-					Read_All_Flash(1001);
+					Read_All_Flash(101);
 					SOUND_DEL=0;
-					SOUND_SIZE=(31000);
+					SOUND_SIZE=(13000);
 					Sound=1;
 					}
 				}
@@ -211,9 +211,9 @@ for (;;)
 					Start=0;
 					Sound_Dis=0;
 					ChLcd=1;
-					Read_All_Flash(0);
+					Read_All_Flash(200);
 					SOUND_DEL=0;
-					SOUND_SIZE=(528*32);
+					SOUND_SIZE=(22800);
 					Sound=1;
 					}				
 				}
@@ -315,9 +315,9 @@ for (;;)
 					{}
 				Sound_Dis=0;
 				ChLcd=1;
-				Read_All_Flash(601);
+				Read_All_Flash(2050);
 				SOUND_DEL=0;
-				SOUND_SIZE=(2000);
+				SOUND_SIZE=(528);
 				Sound=1;
 				}
 			
@@ -335,9 +335,9 @@ for (;;)
 				SCHET1=SCHET2=0;
 				Sound_Dis=0;
 				ChLcd=1;
-				Read_All_Flash(201);
+				Read_All_Flash(0);
 				SOUND_DEL=0;
-				SOUND_SIZE=(29000);
+				SOUND_SIZE=(2900);
 				Sound=1;
 				}
 
@@ -350,7 +350,7 @@ for (;;)
 				DelayMs(100);
 				Sound_Dis=0;
 				ChLcd=1;
-				Read_All_Flash(601);
+				Read_All_Flash(2050);
 				SOUND_DEL=0;
 				SOUND_SIZE=(528);
 				Sound=1;
@@ -423,7 +423,7 @@ if (T0IF)
 		SOUND_DEL++;
 		if (SOUND_DEL>=SOUND_SIZE)
 			{
-//			Sound_Dis=1;
+			Sound_Dis=1;
 			Sound=0;
 			Cs=1;
 			CCPR1L=100;

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="PICkit2V2">
+</Property><Property Name="Файл решения" Value="C:\_snv\siborion\hockey\SoftWare\PICkit2V2.sln">
+</Property><Property Name="Date" Value="8 ноября 2009 г.">
+</Property><Property Name="Time" Value="11:14">
+</Property></Properties><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\PICkit2V2.csproj" Description="Файл проекта не нуждается в преобразовании.">
+</Event><Event ErrorLevel="3" Project="PICkit2V2" Source="PICkit2V2\PICkit2V2.csproj" Description="Преобразование не требуется">
+</Event><Event ErrorLevel="0" Project="" Source="PICkit2V2.sln" Description="Преобразование решения успешно завершено">
+</Event><Event ErrorLevel="3" Project="" Source="PICkit2V2.sln" Description="Converted">
+</Event></UpgradeLog>

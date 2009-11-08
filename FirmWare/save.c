@@ -120,7 +120,7 @@ for (;;)
 		if (TMP_KEY=Key())
 			{
 			if (TMP_KEY&0b00000001)
-				{Do_Save=Nom_Resiv=1000;}
+				{Do_Save=Nom_Resiv=200;}
 
 /*
 			if (TMP_KEY&0b00000010)
