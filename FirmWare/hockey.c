@@ -5,8 +5,9 @@
 #include "delay.h"
 #include "at45.h"
 #include "key.h"
+#include "mt-10t11.h"
 
-__CONFIG  (UNPROTECT &  BORDIS & PWRTEN & WDTDIS & INTIO & MCLRDIS & CP);
+__CONFIG  (UNPROTECT &  BORDIS & PWRTEN & WDTDIS & INTIO & MCLRDIS); // & CP);
 
 
 __EEPROM_DATA(6,0,'+','C','I','P','C','S');
@@ -295,6 +296,17 @@ for (;;)
 				IND[9]++;
 				TMP_LCD--;
 				}
+
+			IND[0]=0;
+			IND[1]=1;
+			IND[2]=2;
+			IND[3]=3;
+			IND[4]=4;
+			IND[5]=5;
+			IND[6]=6;
+			IND[7]=7;
+			IND[8]=8;
+			IND[9]=9;
 
 			Lcd(IND);
 			}
