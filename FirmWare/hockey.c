@@ -47,8 +47,11 @@ unsigned int Nom_Resiv;
 
 unsigned char IND[10];
 
-unsigned char Key3_DEL;
-unsigned char Key4_DEL;
+unsigned int Key3_DEL;
+unsigned int Key4_DEL;
+
+unsigned char GOL1_DEL;
+unsigned char GOL2_DEL;
 
 
 static bit Tic0132;
@@ -95,7 +98,9 @@ IND[8]=8;
 */
 
 
-Sound_Dis=0;
+Gol1Led=Gol2Led=1;
+
+Sound_Dis=1;
 
 SOUND=0b00000000+1;
 
@@ -115,10 +120,10 @@ if ((!Key1)&&(!Key2))
 	DelayMs(100);
 	Sound_Dis=0;
 	ChLcd=1;
-	Read_All_Flash(2001);
+	Read_All_Flash(250);
 //	Read_All_Flash(101);
 	SOUND_DEL=0;
-	SOUND_SIZE=(62000);
+	SOUND_SIZE=(60000);
 //	SOUND_SIZE=(11900);
 	Sound=1;
 
@@ -140,9 +145,10 @@ for (;;)
 			{
 			if (Key3_DEL==0)
 				{
-				Key3_DEL=Key_Delay;
+				Key3_DEL=5000;
 				if ((Start)&&(!Pause))
 					{
+					Gol1Led=0;
 					Sound=0;
 					Cs=1;
 					DelayMs(100);
@@ -156,7 +162,7 @@ for (;;)
 					}
 				}
 			else
-				{Key3_DEL=250;}
+				{Key3_DEL=5000;}
 			}
 		else
 			{
@@ -169,9 +175,10 @@ for (;;)
 			{
 			if (Key4_DEL==0)
 				{
-				Key4_DEL=Key_Delay;
+				Key4_DEL=5000;
 				if ((Start)&&(!Pause))
 					{
+					Gol2Led=0;
 					Sound=0;
 					Cs=1;
 					DelayMs(100);
@@ -185,7 +192,7 @@ for (;;)
 					}
 				}
 			else
-				{Key4_DEL=250;}
+				{Key4_DEL=5000;}
 			}
 		else
 			{
@@ -318,9 +325,9 @@ for (;;)
 					{}
 				Sound_Dis=0;
 				ChLcd=1;
-				Read_All_Flash(2050);
+				Read_All_Flash(250);
 				SOUND_DEL=0;
-				SOUND_SIZE=(528);
+				SOUND_SIZE=(250);
 				Sound=1;
 				}
 			
@@ -353,9 +360,9 @@ for (;;)
 				DelayMs(100);
 				Sound_Dis=0;
 				ChLcd=1;
-				Read_All_Flash(2050);
+				Read_All_Flash(250);
 				SOUND_DEL=0;
-				SOUND_SIZE=(528);
+				SOUND_SIZE=(250);
 				Sound=1;
 				}
 
@@ -396,6 +403,7 @@ if (T0IF)
 			Cs=1;
 			CCPR1L=100;
 			CCP1CON&=0b11001111;
+			Gol1Led=Gol2Led=1;
 			}
 		}
 

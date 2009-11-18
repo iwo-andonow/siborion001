@@ -1,4 +1,4 @@
-#define TRIS_A		0b11101010
+#define TRIS_A		0b11101000
 #define TRIS_B		0b10111111
 #define TRIS_C		0b00000110
 
@@ -13,6 +13,8 @@
 
 #define Led_Out  RC3
 
+#define Gol1Led  RA0
+#define Gol2Led  RA1
 
 
 #define Sound_Dis  RC0

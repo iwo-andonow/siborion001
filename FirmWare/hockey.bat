@@ -21,12 +21,12 @@ rem "C:\Program Files\HI-TECH Software\PICC\std\9.60\bin\picc.exe" -C C:\_snv\si
 
 
 
-rem "C:\Program Files\HI-TECH Software\PICC\std\9.60\bin\picc.exe" -C C:\_snv\siborion\hockey\FirmWare\mt-10t11.c -q --chip=16F690 -P --runtime=default --opt=default -D__DEBUG=1 -g --asmlist "--errformat=Error   [%n] %f; %l.%c %s" "--msgformat=Advisory[%n] %s" "--warnformat=Warning [%n] %f; %l.%c %s" 
-"C:\Program Files\HI-TECH Software\PICC\std\9.60\bin\picc.exe" -C C:\_snv\siborion\hockey\FirmWare\lcd-1611.c -q --chip=16F690 -P --runtime=default --opt=default -D__DEBUG=1 -g --asmlist "--errformat=Error   [%n] %f; %l.%c %s" "--msgformat=Advisory[%n] %s" "--warnformat=Warning [%n] %f; %l.%c %s" 
+"C:\Program Files\HI-TECH Software\PICC\std\9.60\bin\picc.exe" -C C:\_snv\siborion\hockey\FirmWare\mt-10t11.c -q --chip=16F690 -P --runtime=default --opt=default -D__DEBUG=1 -g --asmlist "--errformat=Error   [%n] %f; %l.%c %s" "--msgformat=Advisory[%n] %s" "--warnformat=Warning [%n] %f; %l.%c %s" 
+rem "C:\Program Files\HI-TECH Software\PICC\std\9.60\bin\picc.exe" -C C:\_snv\siborion\hockey\FirmWare\lcd-1611.c -q --chip=16F690 -P --runtime=default --opt=default -D__DEBUG=1 -g --asmlist "--errformat=Error   [%n] %f; %l.%c %s" "--msgformat=Advisory[%n] %s" "--warnformat=Warning [%n] %f; %l.%c %s" 
 
 
-rem "C:\Program Files\HI-TECH Software\PICC\std\9.60\bin\picc.exe" -ohockey.cof -mhockey.map --summary=default --output=default hockey.obj init.obj delay.obj key.obj at45.obj mt-10t11.obj --chip=16F690 -P --runtime=default --opt=default -D__DEBUG=1 -g --asmlist "--errformat=Error   [%n] %f; %l.%c %s" "--msgformat=Advisory[%n] %s" "--warnformat=Warning [%n] %f; %l.%c %s" 
-"C:\Program Files\HI-TECH Software\PICC\std\9.60\bin\picc.exe" -ohockey.cof -mhockey.map --summary=default --output=default hockey.obj init.obj delay.obj key.obj at45.obj lcd-1611.obj --chip=16F690 -P --runtime=default --opt=default -D__DEBUG=1 -g --asmlist "--errformat=Error   [%n] %f; %l.%c %s" "--msgformat=Advisory[%n] %s" "--warnformat=Warning [%n] %f; %l.%c %s" 
+"C:\Program Files\HI-TECH Software\PICC\std\9.60\bin\picc.exe" -ohockey.cof -mhockey.map --summary=default --output=default hockey.obj init.obj delay.obj key.obj at45.obj mt-10t11.obj --chip=16F690 -P --runtime=default --opt=default -D__DEBUG=1 -g --asmlist "--errformat=Error   [%n] %f; %l.%c %s" "--msgformat=Advisory[%n] %s" "--warnformat=Warning [%n] %f; %l.%c %s" 
+rem "C:\Program Files\HI-TECH Software\PICC\std\9.60\bin\picc.exe" -ohockey.cof -mhockey.map --summary=default --output=default hockey.obj init.obj delay.obj key.obj at45.obj lcd-1611.obj --chip=16F690 -P --runtime=default --opt=default -D__DEBUG=1 -g --asmlist "--errformat=Error   [%n] %f; %l.%c %s" "--msgformat=Advisory[%n] %s" "--warnformat=Warning [%n] %f; %l.%c %s" 
 
 
 
