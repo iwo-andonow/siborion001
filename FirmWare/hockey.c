@@ -120,7 +120,7 @@ if ((!Key1)&&(!Key2))
 	DelayMs(100);
 	Sound_Dis=0;
 	ChLcd=1;
-	Read_All_Flash(250);
+	Read_All_Flash(142);
 //	Read_All_Flash(101);
 	SOUND_DEL=0;
 	SOUND_SIZE=(60000);
@@ -157,7 +157,7 @@ for (;;)
 					ChLcd=1;
 					Read_All_Flash(9);
 					SOUND_DEL=0;
-					SOUND_SIZE=(54700);
+					SOUND_SIZE=(43700);
 					Sound=1;
 					}
 				}
@@ -187,7 +187,7 @@ for (;;)
 					ChLcd=1;
 					Read_All_Flash(9);
 					SOUND_DEL=0;
-					SOUND_SIZE=(54700);
+					SOUND_SIZE=(43700);
 					Sound=1;
 					}
 				}
@@ -221,9 +221,9 @@ for (;;)
 					Start=0;
 					Sound_Dis=0;
 					ChLcd=1;
-					Read_All_Flash(114);
+					Read_All_Flash(92);
 					SOUND_DEL=0;
-					SOUND_SIZE=(22000);
+					SOUND_SIZE=(23000);
 					Sound=1;
 					}				
 				}
@@ -347,7 +347,7 @@ for (;;)
 				ChLcd=1;
 				Read_All_Flash(1);
 				SOUND_DEL=0;
-				SOUND_SIZE=(3900);
+				SOUND_SIZE=(4000);
 				Sound=1;
 				}
 
