@@ -98,7 +98,7 @@ IND[8]=8;
 */
 
 
-Gol1Led=Gol2Led=1;
+Gol1Led=Gol2Led=0;
 
 Sound_Dis=1;
 
@@ -148,7 +148,7 @@ for (;;)
 				Key3_DEL=5000;
 				if ((Start)&&(!Pause))
 					{
-					Gol1Led=0;
+					Gol1Led=1;
 					Sound=0;
 					Cs=1;
 					DelayMs(100);
@@ -178,7 +178,7 @@ for (;;)
 				Key4_DEL=5000;
 				if ((Start)&&(!Pause))
 					{
-					Gol2Led=0;
+					Gol2Led=1;
 					Sound=0;
 					Cs=1;
 					DelayMs(100);
@@ -403,7 +403,7 @@ if (T0IF)
 			Cs=1;
 			CCPR1L=100;
 			CCP1CON&=0b11001111;
-			Gol1Led=Gol2Led=1;
+			Gol1Led=Gol2Led=0;
 			}
 		}
 
